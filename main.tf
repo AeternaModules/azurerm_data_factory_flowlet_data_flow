@@ -10,7 +10,7 @@ resource "azurerm_data_factory_flowlet_data_flow" "data_factory_flowlet_data_flo
   script_lines    = each.value.script_lines
 
   dynamic "sink" {
-    for_each = each.value.sink != null ? [each.value.sink] : []
+    for_each = each.value.sink != null ? each.value.sink : []
     content {
       dynamic "dataset" {
         for_each = sink.value.dataset != null ? [sink.value.dataset] : []
@@ -54,7 +54,7 @@ resource "azurerm_data_factory_flowlet_data_flow" "data_factory_flowlet_data_flo
   }
 
   dynamic "source" {
-    for_each = each.value.source != null ? [each.value.source] : []
+    for_each = each.value.source != null ? each.value.source : []
     content {
       dynamic "dataset" {
         for_each = source.value.dataset != null ? [source.value.dataset] : []
@@ -98,7 +98,7 @@ resource "azurerm_data_factory_flowlet_data_flow" "data_factory_flowlet_data_flo
   }
 
   dynamic "transformation" {
-    for_each = each.value.transformation != null ? [each.value.transformation] : []
+    for_each = each.value.transformation != null ? each.value.transformation : []
     content {
       dynamic "dataset" {
         for_each = transformation.value.dataset != null ? [transformation.value.dataset] : []
