@@ -153,6 +153,72 @@ EOT
   # path: script_lines[*]
   #   condition: length(value) > 0
   #   message:   must not be empty
+  # path: source.name
+  #   condition: length(value) > 0
+  #   message:   must not be empty
+  # path: source.description
+  #   condition: length(value) > 0
+  #   message:   must not be empty
+  # path: source.dataset.name
+  #   condition: length(value) > 0
+  #   message:   must not be empty
+  # path: source.flowlet.name
+  #   condition: length(value) > 0
+  #   message:   must not be empty
+  # path: source.flowlet.dataset_parameters
+  #   condition: length(value) > 0
+  #   message:   must not be empty
+  # path: source.linked_service.name
+  #   condition: length(value) > 0
+  #   message:   must not be empty
+  # path: source.rejected_linked_service.name
+  #   condition: length(value) > 0
+  #   message:   must not be empty
+  # path: source.schema_linked_service.name
+  #   condition: length(value) > 0
+  #   message:   must not be empty
+  # path: sink.name
+  #   condition: length(value) > 0
+  #   message:   must not be empty
+  # path: sink.description
+  #   condition: length(value) > 0
+  #   message:   must not be empty
+  # path: sink.dataset.name
+  #   condition: length(value) > 0
+  #   message:   must not be empty
+  # path: sink.flowlet.name
+  #   condition: length(value) > 0
+  #   message:   must not be empty
+  # path: sink.flowlet.dataset_parameters
+  #   condition: length(value) > 0
+  #   message:   must not be empty
+  # path: sink.linked_service.name
+  #   condition: length(value) > 0
+  #   message:   must not be empty
+  # path: sink.rejected_linked_service.name
+  #   condition: length(value) > 0
+  #   message:   must not be empty
+  # path: sink.schema_linked_service.name
+  #   condition: length(value) > 0
+  #   message:   must not be empty
+  # path: transformation.name
+  #   condition: length(value) > 0
+  #   message:   must not be empty
+  # path: transformation.description
+  #   condition: length(value) > 0
+  #   message:   must not be empty
+  # path: transformation.dataset.name
+  #   condition: length(value) > 0
+  #   message:   must not be empty
+  # path: transformation.flowlet.name
+  #   condition: length(value) > 0
+  #   message:   must not be empty
+  # path: transformation.flowlet.dataset_parameters
+  #   condition: length(value) > 0
+  #   message:   must not be empty
+  # path: transformation.linked_service.name
+  #   condition: length(value) > 0
+  #   message:   must not be empty
   # path: description
   #   condition: length(value) > 0
   #   message:   must not be empty
